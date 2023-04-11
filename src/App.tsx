@@ -1,6 +1,9 @@
 import './App.css'; 
+import { Button } from './components/Button';
+import { Container } from './components/Container';
 import { Greet } from './components/Greet';
 import { Heading } from './components/Heading';
+import { Input } from './components/Input';
 import { Oscar } from './components/Oscar';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
@@ -14,16 +17,16 @@ function App() {
 
   const nameList = [
     {
-      first : "Bruce",
-      last : "Wayne"
+      firstName : "Bruce",
+      lastName : "Wayne"
     },
     {
-      first : "Clark",
-      last : "Kent"
+      firstName : "Clark",
+      lastName : "Kent"
     }, 
     {
-      first : "Princess",
-      last : "Diana"
+      firstName : "Princess",
+      lastName : "Diana"
     }
   ];
 
@@ -38,6 +41,9 @@ function App() {
       <Oscar>
         <Heading>Oscar goes to Leonardo Dicpario!</Heading>
       </Oscar>
+      <Button handleClick={(event) => console.log(`Button Click`, event)}></Button>
+      <Input value='' handleChange={(event) => console.log(event)} />
+      <Container styles={{ border : `1px solid`, padding: `1rem`}} />
     </div>
   );
 }

@@ -10,10 +10,7 @@ In the project directory, you can run:
 
 
 ### Props
-    - Props Types (string, number, boolean and etc) 
-    - Dynamic Props
-    - Optional Props
-    - Array, Object Props
-    - Children Props
-    - Components Props
+    - Event Props
+    - Style Props
+    - Separate Type file and import
  
